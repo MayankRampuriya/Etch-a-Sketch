@@ -29,7 +29,7 @@ function newGrid() {
     }
 
     for (let i = 0; i < size * size; i++) {
-        document.querySelectorAll('.square')[i].style.padding = `${320 / size - 6}px`;
+        document.querySelectorAll('.square')[i].style.padding = `${320 / size - 5}px`;
     }
 
     let squares = document.querySelectorAll('.square');

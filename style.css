@@ -42,13 +42,31 @@
 
 h1{
     color: #333;
-    font-size: xxx-large;
+    font-size: 60px;
     text-align: center;
+    font-family: myFirstFont;
+    letter-spacing: 5px;
+    padding-bottom: 5px;
 }
 footer{
     display: flex;
-    margin-top: 60px;
+    margin-top: 36px;
     justify-content: center;
     align-items: center;
     /* font-size: 18px; */
 }
+
+@keyframes mymove {
+    from {transform: rotateX(0deg);}
+    to {transform: rotateX(360deg);}
+}
+img:hover{
+    animation: mymove 1s infinite;
+    /* animation-direction: alternate; */
+    width: 50px;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/DemoFont.otf);
+  }
